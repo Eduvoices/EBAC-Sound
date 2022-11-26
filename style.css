@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,
+footer {
+    background-color: #8b0606;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+footer > .container {
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+nav {
+    background-color: #8b0606;
+    padding: 16px 0;
+    display: block;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+.instrumentos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.75%) ;
+    column-gap: 1%;
+    align-content: space-between;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+    text-align: justify;
+    width: 85%;
+}
+
+.instrumento p {
+    text-align: justify;
+    width: 200px;
+}
+
+.instrumentos .instrumento button {
+    display: block;
+    width: 200px;
+    padding: 8px 0;
+    border: none;
+    background-color: #0c81cf;
+    color: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 36px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+.lista-instrumentos h3 {
+    margin: 16px;
+}
+
+.lista-instrumentos img {
+    max-width: 300px;
+    max-height: 300px;
+    height: 100%;
+}
+
+#preço {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.instrumentos .instrumento {
+    display: grid;
+    column-gap: 1%;
+    align-content: space-between;
+}
+
+.container h2 {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #8b0606;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header h1 {
+        padding-left: 8px ;
+        margin-left: 8px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    #sobre {
+        margin-left: 4px;
+    }
+
+    #sobre img {
+        width: 300px;
+        margin-left: 8px;
+    }
+
+    .instrumentos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%) ;
+        column-gap: 1%;
+        row-gap: 5%;
+        align-content: space-between;
+        margin: 32px 15%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    #produtos h2 {
+        margin-left: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        padding: 16px;
+        margin-bottom: none;
+        width: 100vw;
+    }
+
+    header nav li {
+        display: flex;
+        margin-bottom: 4px;
+    }
+
+    header nav {
+        width: 30%;
+    }
+
+    section > .container-flex {
+        display: block;
+    }
+
+    #sobre img {
+        width: 90vw;
+        margin-top: 2px;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    #sobre h2 {
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+
+    .instrumentos {
+        display: block;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .instrumentos .instrumento {
+        margin-bottom: 8px;
+    }
+
+   .instrumento {
+        padding: 16px;
+    }
+
+    #produtos h2 {
+        padding: 8px;
+    }
+}
